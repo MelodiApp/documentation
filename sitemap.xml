@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/</loc>
+         <lastmod>2025-10-03</lastmod>
+    </url>
+    <url>
+         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/arquitectura/</loc>
+         <lastmod>2025-10-03</lastmod>
+    </url>
+    <url>
+         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/bitacora/</loc>
+         <lastmod>2025-10-03</lastmod>
+    </url>
+    <url>
+         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/decisiones/</loc>
+         <lastmod>2025-10-03</lastmod>
+    </url>
+    <url>
+         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/decisiones/0001-elegir-arquitectura-microservicios/</loc>
+         <lastmod>2025-10-03</lastmod>
+    </url>
+    <url>
+         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/estado/funcionalidades/</loc>
+         <lastmod>2025-10-03</lastmod>
+    </url>
+</urlset>

@@ -1,0 +1,26 @@
+openapi: 3.0.3
+info:
+  title: Music Service API
+  version: 1.0.0
+paths:
+  /tracks/{id}:
+    get:
+      summary: Obtener detalle de track
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id: { type: string }
+                  title: { type: string }
+                  artist: { type: string }
+        '404':
+          description: No encontrado
