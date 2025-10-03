@@ -1,0 +1,34 @@
+site_name: Bitácora - Proyecto Spotify Like
+site_description: Documentación y bitácora del proyecto
+site_url: https://<tu-usuario>.github.io/<tu-repo>/
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+plugins:
+  - search
+  - mermaid2
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.emoji
+nav:
+  - Inicio: index.md
+  - Arquitectura:
+    - Visión General: arquitectura.md
+    - Decisiones (ADRs): decisiones/README.md
+  - Estado:
+    - Funcionalidades y Errores: estado/funcionalidades.md
+    - Bitácora: bitacora.md
+  - APIs:
+    - Catálogo: apis/index.html

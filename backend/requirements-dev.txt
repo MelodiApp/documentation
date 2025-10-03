@@ -1,5 +1,0 @@
-# Development-only dependencies
-pytest
-ruff
-pre-commit
-colorlog

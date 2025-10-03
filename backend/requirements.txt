@@ -1,6 +1,0 @@
-fastapi
-uvicorn[standard]
-SQLAlchemy>=2.0.0
-psycopg[binary]
-python-dotenv
-httpx
