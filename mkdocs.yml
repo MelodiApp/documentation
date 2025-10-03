@@ -1,6 +1,6 @@
 site_name: Bitácora - Proyecto Spotify Like
 site_description: Documentación y bitácora del proyecto
-site_url: https://<tu-usuario>.github.io/<tu-repo>/
+site_url: https://melodiapp.github.io/documentation/
 theme:
   name: material
   language: es
