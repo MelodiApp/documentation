@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/</loc>
+         <loc>https://melodiapp.github.io/documentation/</loc>
          <lastmod>2025-10-03</lastmod>
     </url>
     <url>
-         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/arquitectura/</loc>
+         <loc>https://melodiapp.github.io/documentation/arquitectura/</loc>
          <lastmod>2025-10-03</lastmod>
     </url>
     <url>
-         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/bitacora/</loc>
+         <loc>https://melodiapp.github.io/documentation/bitacora/</loc>
          <lastmod>2025-10-03</lastmod>
     </url>
     <url>
-         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/decisiones/</loc>
+         <loc>https://melodiapp.github.io/documentation/decisiones/</loc>
          <lastmod>2025-10-03</lastmod>
     </url>
     <url>
-         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/decisiones/0001-elegir-arquitectura-microservicios/</loc>
+         <loc>https://melodiapp.github.io/documentation/decisiones/0001-elegir-arquitectura-microservicios/</loc>
          <lastmod>2025-10-03</lastmod>
     </url>
     <url>
-         <loc>https://&lt;tu-usuario&gt;.github.io/&lt;tu-repo&gt;/estado/funcionalidades/</loc>
+         <loc>https://melodiapp.github.io/documentation/estado/funcionalidades/</loc>
          <lastmod>2025-10-03</lastmod>
     </url>
 </urlset>
