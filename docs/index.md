@@ -1,13 +1,18 @@
-# Bitácora del Proyecto "Spotify Like"
+# Bitácora del Proyecto MelodiApp
 
-Bienvenidos a la documentación del proyecto. Aquí encontrarás:
-- Diagramas de arquitectura (C4, despliegue, secuencias)
-- Decisiones de arquitectura (ADRs)
-- Funcionalidades incompletas y errores conocidos
-- Problemas encontrados y lecciones aprendidas
-- Demos de features
+<p align="center">
+  <img src="assets/logo_wide.png" alt="Logo de MelodiApp" width="600">
+</p>
 
-Enlaces rápidos:
-- Arquitectura → [Visión General](arquitectura.md)
-- Decisiones → [ADRs](decisiones/README.md)
-- APIs → [Catálogo](apis/index.html)
+Bienvenidos a la documentación del proyecto. Acá vas a encontrar:
+
+- Stack Tecnológico
+- Diagramas de arquitectura
+- Diagramas generales
+- Decisiones tomadas
+- Dificultades
+
+## Enlaces rápidos
+
+- [General](general/general.md)
+- [Arquitectura](arquitectura/arquitectura.md)
