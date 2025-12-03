@@ -2,26 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://melodiapp.github.io/documentation/</loc>
-         <lastmod>2025-10-03</lastmod>
+         <lastmod>2025-12-03</lastmod>
     </url>
     <url>
-         <loc>https://melodiapp.github.io/documentation/arquitectura/</loc>
-         <lastmod>2025-10-03</lastmod>
+         <loc>https://melodiapp.github.io/documentation/arquitectura/arquitectura/</loc>
+         <lastmod>2025-12-03</lastmod>
     </url>
     <url>
-         <loc>https://melodiapp.github.io/documentation/bitacora/</loc>
-         <lastmod>2025-10-03</lastmod>
+         <loc>https://melodiapp.github.io/documentation/arquitectura/backend/</loc>
+         <lastmod>2025-12-03</lastmod>
     </url>
     <url>
-         <loc>https://melodiapp.github.io/documentation/decisiones/</loc>
-         <lastmod>2025-10-03</lastmod>
+         <loc>https://melodiapp.github.io/documentation/arquitectura/diagramas/</loc>
+         <lastmod>2025-12-03</lastmod>
     </url>
     <url>
-         <loc>https://melodiapp.github.io/documentation/decisiones/0001-elegir-arquitectura-microservicios/</loc>
-         <lastmod>2025-10-03</lastmod>
+         <loc>https://melodiapp.github.io/documentation/arquitectura/frontend_movil/</loc>
+         <lastmod>2025-12-03</lastmod>
     </url>
     <url>
-         <loc>https://melodiapp.github.io/documentation/estado/funcionalidades/</loc>
-         <lastmod>2025-10-03</lastmod>
+         <loc>https://melodiapp.github.io/documentation/arquitectura/frontend_web/</loc>
+         <lastmod>2025-12-03</lastmod>
+    </url>
+    <url>
+         <loc>https://melodiapp.github.io/documentation/general/checkpoints/</loc>
+         <lastmod>2025-12-03</lastmod>
+    </url>
+    <url>
+         <loc>https://melodiapp.github.io/documentation/general/decisiones/</loc>
+         <lastmod>2025-12-03</lastmod>
+    </url>
+    <url>
+         <loc>https://melodiapp.github.io/documentation/general/dificultades/</loc>
+         <lastmod>2025-12-03</lastmod>
+    </url>
+    <url>
+         <loc>https://melodiapp.github.io/documentation/general/general/</loc>
+         <lastmod>2025-12-03</lastmod>
     </url>
 </urlset>

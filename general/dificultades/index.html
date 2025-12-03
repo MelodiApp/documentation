@@ -10,21 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://melodiapp.github.io/documentation/decisiones/0001-elegir-arquitectura-microservicios/">
+        <link rel="canonical" href="https://melodiapp.github.io/documentation/general/dificultades/">
       
       
+        <link rel="prev" href="../decisiones/">
+      
+      
+        <link rel="next" href="../checkpoints/">
+      
+      
+        
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>ADR 0001 - Elegir arquitectura de microservicios - Bitácora - Proyecto Spotify Like</title>
+        <title>Dificultades - Bitácora - Proyecto Spotify Like</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
       
       
 
@@ -49,7 +56,6 @@
 
     
     
-    
   </head>
   
   
@@ -62,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adr-0001-elegir-arquitectura-de-microservicios" class="md-skip">
+        <a href="#dificultades-encontradas" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -98,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ADR 0001 - Elegir arquitectura de microservicios
+              Dificultades
             
           </span>
         </div>
@@ -201,9 +207,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Inicio
+  
+
     
   </span>
+  
   
 
       </a>
@@ -241,9 +252,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Arquitectura
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -252,7 +268,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Arquitectura
+            
+  
+    Arquitectura
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -263,14 +283,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arquitectura/" class="md-nav__link">
+      <a href="../../arquitectura/arquitectura/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Visión General
+  
+
     
   </span>
+  
   
 
       </a>
@@ -286,14 +311,103 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../arquitectura/backend/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Decisiones (ADRs)
+    
+  
+    Backend
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitectura/frontend_movil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Móvil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitectura/frontend_web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frontend Web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquitectura/diagramas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Diagramas
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -313,8 +427,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -325,13 +441,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -339,18 +453,27 @@
   
   
   <span class="md-ellipsis">
-    Estado
+    
+  
+    General
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Estado
+            
+  
+    General
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -361,14 +484,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../estado/funcionalidades/" class="md-nav__link">
+      <a href="../general/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Funcionalidades y Errores
+    
+  
+    Introducción
+  
+
     
   </span>
+  
   
 
       </a>
@@ -384,14 +512,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../bitacora/" class="md-nav__link">
+      <a href="../decisiones/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Bitácora
+    
+  
+    Decisiones
+  
+
     
   </span>
+  
   
 
       </a>
@@ -400,57 +533,113 @@
 
               
             
-          </ul>
-        </nav>
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dificultades
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dificultades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#migraciones-de-base-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Migraciones de Base de Datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#almacenamiento-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Almacenamiento de Archivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coordinacion-entre-integrantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coordinación entre integrantes
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
 
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    APIs
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            APIs
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
+              
             
               
                 
@@ -459,14 +648,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../../apis/" class="md-nav__link">
+      <a href="../checkpoints/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Catálogo
+    
+  
+    Checkpoints
+  
+
     
   </span>
+  
   
 
       </a>
@@ -509,36 +703,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#contexto" class="md-nav__link">
+  <a href="#migraciones-de-base-de-datos" class="md-nav__link">
     <span class="md-ellipsis">
-      Contexto
+      
+        Migraciones de Base de Datos
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#opciones-evaluadas" class="md-nav__link">
+  <a href="#almacenamiento-de-archivos" class="md-nav__link">
     <span class="md-ellipsis">
-      Opciones evaluadas
+      
+        Almacenamiento de Archivos
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#decision" class="md-nav__link">
+  <a href="#coordinacion-entre-integrantes" class="md-nav__link">
     <span class="md-ellipsis">
-      Decisión
-    </span>
-  </a>
-  
-</li>
       
-        <li class="md-nav__item">
-  <a href="#consecuencias" class="md-nav__link">
-    <span class="md-ellipsis">
-      Consecuencias
+        Coordinación entre integrantes
+      
     </span>
   </a>
   
@@ -554,28 +745,30 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
 
 
 
-<h1 id="adr-0001-elegir-arquitectura-de-microservicios">ADR 0001 - Elegir arquitectura de microservicios<a class="headerlink" href="#adr-0001-elegir-arquitectura-de-microservicios" title="Permanent link">&para;</a></h1>
-<p>Fecha: 2025-09-20
-Estado: Aprobada</p>
-<h2 id="contexto">Contexto<a class="headerlink" href="#contexto" title="Permanent link">&para;</a></h2>
-<p>Necesitamos escalar y desplegar de forma independiente módulos como autenticación, catálogo musical y playlists.</p>
-<h2 id="opciones-evaluadas">Opciones evaluadas<a class="headerlink" href="#opciones-evaluadas" title="Permanent link">&para;</a></h2>
-<p>1) Monolito modular
-2) Microservicios por dominio
-3) SOA con ESB</p>
-<h2 id="decision">Decisión<a class="headerlink" href="#decision" title="Permanent link">&para;</a></h2>
-<p>Adoptar microservicios por dominio con API Gateway y mensajería para eventos.</p>
-<h2 id="consecuencias">Consecuencias<a class="headerlink" href="#consecuencias" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Despliegue independiente, escalado selectivo</li>
-<li>Mayor complejidad operativa y observabilidad</li>
-</ul>
+<h1 id="dificultades-encontradas">Dificultades Encontradas<a class="headerlink" href="#dificultades-encontradas" title="Permanent link">&para;</a></h1>
+<p>Durante el desarrollo de <strong>MelodiApp</strong>, nos encontramos con varios desafíos técnicos y de coordinación que nos permitieron aprender y mejorar nuestro flujo de trabajo.</p>
+<h2 id="migraciones-de-base-de-datos">Migraciones de Base de Datos<a class="headerlink" href="#migraciones-de-base-de-datos" title="Permanent link">&para;</a></h2>
+<p>Al inicio del proyecto, <strong>no estábamos familiarizados con las migraciones</strong> y el manejo de cambios en la base de datos.<br />
+Esto generó problemas frecuentes al ejecutar los comandos de migración, especialmente cuando un integrante realizaba modificaciones en el esquema de datos.<br />
+Cada cambio requería generar una nueva migración manualmente, y estas no se actualizaban automáticamente para los demás miembros del equipo, lo que provocaba inconsistencias temporales y errores de sincronización.</p>
+<h2 id="almacenamiento-de-archivos">Almacenamiento de Archivos<a class="headerlink" href="#almacenamiento-de-archivos" title="Permanent link">&para;</a></h2>
+<p>El manejo de archivos multimedia, como imágenes y audios, también presentó dificultades.<br />
+Tuvimos problemas con <strong>Amazon S3</strong> y con <strong>LocalStack</strong> durante la etapa de desarrollo y pruebas locales.<br />
+En particular, la configuración de buckets y permisos, así como la simulación de S3 en LocalStack, generó errores inesperados que debimos resolver iterativamente.</p>
+<h2 id="coordinacion-entre-integrantes">Coordinación entre integrantes<a class="headerlink" href="#coordinacion-entre-integrantes" title="Permanent link">&para;</a></h2>
+<p>La combinación de microservicios, gateways y frontends hizo necesario establecer un flujo de trabajo claro para evitar conflictos de integración.<br />
+El equipo aprendió a coordinar cambios, especialmente en la base de datos y en la configuración de servicios de almacenamiento, para mantener la consistencia del proyecto.</p>
+<hr />
+<blockquote>
+<p><em>Nota:</em> Cada una de estas dificultades nos permitió mejorar la planificación, documentación y comunicación interna del equipo, estableciendo buenas prácticas que se aplicaron en las siguientes etapas del proyecto.</p>
+</blockquote>
 
 
 
@@ -624,10 +817,11 @@ Estado: Aprobada</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
     
   </body>
