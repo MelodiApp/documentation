@@ -25,10 +25,13 @@ markdown_extensions:
 nav:
   - Inicio: index.md
   - Arquitectura:
-    - Visión General: arquitectura.md
-    - Decisiones (ADRs): decisiones/README.md
-  - Estado:
-    - Funcionalidades y Errores: estado/funcionalidades.md
-    - Bitácora: bitacora.md
-  - APIs:
-    - Catálogo: apis/index.html
+    - Visión General: arquitectura/arquitectura.md
+    - Backend: arquitectura/backend.md
+    - Frontend Móvil: arquitectura/frontend_movil.md
+    - Frontend Web: arquitectura/frontend_web.md
+    - Diagramas: arquitectura/diagramas.md
+  - General:
+    - Introducción: general/general.md
+    - Decisiones: general/decisiones.md
+    - Dificultades: general/dificultades.md
+    - Checkpoints: general/checkpoints.md
