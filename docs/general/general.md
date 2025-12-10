@@ -25,6 +25,8 @@ El desarrollo implicó:
 
 Todo el sistema fue construido respetando principios de diseño como modularidad, mantenibilidad y separación de responsabilidades.
 
+ 
+
 ## Equipo
 
 | Integrante              | Legajo   |

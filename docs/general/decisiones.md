@@ -18,6 +18,14 @@ Decidimos implementar **microservicios independientes** para separar claramente 
 **Motivación:**  
 Separar las funcionalidades en microservicios permite un desarrollo más modular, facilita la escalabilidad y el mantenimiento, y reduce el riesgo de que un fallo en un servicio afecte a toda la aplicación.
 
+### Elección de tecnologías por servicio
+En algunos casos la elección de la tecnología estuvo guiada por la especialización de cada integrante y por las necesidades particulares del servicio:
+
+- Servicios desarrollados en **Python (FastAPI)**: fueron elegidos para aquellos componentes cuya lógica requería acceso cercano a herramientas y bibliotecas de Python (por ejemplo, SQLAlchemy y Alembic para el manejo de migraciones y modelos), así como para facilitar la manipulación y análisis de datos en el caso del servicio de métricas.
+- Servicios desarrollados en **Node.js (Prisma)**: se utilizaron para microservicios que se benefician de un ecosistema JavaScript amplio (por ejemplo, integración con el Gateway y el manejo de flujos de datos en tiempo real), además de la conveniencia de usar Prisma en servicios que requieren un acceso sencillo a SQL con generación de tipados.
+
+Estas elecciones buscan balancear la productividad del equipo con la robustez del stack y la interoperabilidad entre servicios.
+
 ## Almacenamiento de Archivos Multimedia
 Para el manejo de imágenes y audios, decidimos utilizar **LocalStack** durante el desarrollo local y **Amazon S3** en producción:
 

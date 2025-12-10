@@ -35,3 +35,7 @@ nav:
     - Decisiones: general/decisiones.md
     - Dificultades: general/dificultades.md
     - Checkpoints: general/checkpoints.md
+  - APIs:
+    - Especificaciones: apis.md
+  - Contribuir:
+    - Cómo colaborar: contribuir.md
