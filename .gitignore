@@ -1,2 +1,4 @@
+# Ignore generated MkDocs site
+site/
 .venv/
 __pycache__site/

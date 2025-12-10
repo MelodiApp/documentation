@@ -24,12 +24,44 @@ A continuación se describen varias formas sencillas para levantar esta document
 
 ### Requisitos
 
-- Node.js (recomendado >= 12) y npm o yarn. Si no querés instalar nada, podés usar npx.
+- Node.js (recomendado >= 12) y npm o yarn si preferís usar Docsify. Para el flujo recomendado con MkDocs, necesitás Python 3 y pip.
 
-### Opción A — Usar npx (sin instalar nada globalmente)
+### Opción recomendada — Usar MkDocs (igual que lo publicado en GitHub Pages)
+
+MkDocs genera el sitio estático final que se publica en GitHub Pages. Si querés reproducir exactamente la versión publicada y usar el tema Material, esta es la opción recomendada.
 
 ```bash
-npx docsify-cli@4 serve . -p 4000
+# Desde la raíz del repo
+cd /home/daniela/Escritorio/IDS2/Melodia/documentation
+
+# Crear y activar un virtualenv (recomendado)
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Instalar MkDocs y plugins (solo una vez por entorno)
+pip install --upgrade pip
+pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin
+
+# Servir en vivo con hot reload
+mkdocs serve
+
+# O generar el sitio estático (directorio `site/`)
+mkdocs build --strict
+```
+
+### Opción B — Usar Docsify (rápido, sin instalar nada globalmente)
+
+Docsify es útil para ver rápidamente los archivos markdown con recarga en caliente, pero no genera el sitio final con MkDocs. Si querés usar Docsify para edición rápida:
+
+```bash
+# Servir la carpeta docs (desde la raíz del repo)
+npx docsify-cli@4 serve docs -p 4000
+```
+
+Si `docs/index.html` falta, Docsify te pedirá que ejecutes `docsify init docs`. Si preferís usar Docsify como alternativa, podés generar `index.html` con:
+
+```bash
+npx docsify-cli@4 init docs --force
 ```
 
 ### Opción B — Instalar Docsify CLI globalmente
@@ -65,11 +97,22 @@ docsify serve . -p 4000
 La instrucción mínima rápida:
 
 ```bash
-docsify serve . -p 4000
+# desde la raíz del repo
+npx docsify-cli@4 serve docs -p 4000
 ```
 
 o (sin instalar)
 
 ```bash
-npx docsify-cli@4 serve . -p 4000
+npx docsify-cli@4 serve docs -p 4000
+```
+
+Scripts de ayuda (opcional)
+
+```bash
+# sirve con docsify y crea index si falta
+./scripts/serve-docsify.sh
+
+# sirve con mkdocs (crea .venv e instala deps si es necesario)
+./scripts/serve-mkdocs.sh
 ```
