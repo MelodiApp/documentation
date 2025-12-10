@@ -31,19 +31,30 @@ A continuación se describen varias formas sencillas para levantar esta document
 MkDocs genera el sitio estático final que se publica en GitHub Pages. Si querés reproducir exactamente la versión publicada y usar el tema Material, esta es la opción recomendada.
 
 ```bash
-# Desde la raíz del repo
-cd /home/daniela/Escritorio/IDS2/Melodia/documentation
+# Sin venv — método recomendado (pipx)
+# 1) instalar pipx (si no está instalado):
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
+# Si pipx añade rutas al PATH, cerrá y reabrí la terminal
 
-# Crear y activar un virtualenv (recomendado)
+# 2) instalar mkdocs con pipx y añadir plugins:
+pipx install mkdocs
+pipx runpip mkdocs install mkdocs-material mkdocs-mermaid2-plugin
+
+# 3) servir en vivo en puerto 4000:
+mkdocs serve -a 127.0.0.1:4000
+
+# Alternativa sin pipx (pip --user):
+python3 -m pip install --user mkdocs mkdocs-material mkdocs-mermaid2-plugin
+export PATH="$HOME/.local/bin:$PATH"
+mkdocs serve -a 127.0.0.1:4000
+
+# Alternativa con virtualenv (opcional, aislada):
 python3 -m venv .venv
 source .venv/bin/activate
-
-# Instalar MkDocs y plugins (solo una vez por entorno)
 pip install --upgrade pip
 pip install mkdocs mkdocs-material mkdocs-mermaid2-plugin
-
-# Servir en vivo con hot reload
-mkdocs serve
+mkdocs serve -a 127.0.0.1:4000
 
 # O generar el sitio estático (directorio `site/`)
 mkdocs build --strict
@@ -83,6 +94,15 @@ docsify serve . -p 4000
 ### Acceder a la documentación
 
 - Abrí tu navegador en: <http://localhost:4000>
+
+### Servir la versión estática (`site/`)
+
+Si ya generaste el sitio con `mkdocs build`, podés servir el contenido HTML generado con Python (rápido):
+
+```bash
+cd /home/daniela/Escritorio/IDS2/Melodia/documentation
+python3 -m http.server 4000 --directory site
+```
 
 ### Notas y solución de problemas
 
