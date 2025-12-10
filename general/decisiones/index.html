@@ -591,6 +591,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Microservicios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eleccion-de-tecnologias-por-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elección de tecnologías por servicio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -687,6 +704,184 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APIs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    APIs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Especificaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuir
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contribuir
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribuir/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cómo colaborar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -732,6 +927,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Microservicios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eleccion-de-tecnologias-por-servicio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elección de tecnologías por servicio
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -790,6 +1002,13 @@ Esto permite <strong>centralizar el enrutamiento de solicitudes</strong> y facil
 </ul>
 <p><strong>Motivación:</strong><br />
 Separar las funcionalidades en microservicios permite un desarrollo más modular, facilita la escalabilidad y el mantenimiento, y reduce el riesgo de que un fallo en un servicio afecte a toda la aplicación.</p>
+<h3 id="eleccion-de-tecnologias-por-servicio">Elección de tecnologías por servicio<a class="headerlink" href="#eleccion-de-tecnologias-por-servicio" title="Permanent link">&para;</a></h3>
+<p>En algunos casos la elección de la tecnología estuvo guiada por la especialización de cada integrante y por las necesidades particulares del servicio:</p>
+<ul>
+<li>Servicios desarrollados en <strong>Python (FastAPI)</strong>: fueron elegidos para aquellos componentes cuya lógica requería acceso cercano a herramientas y bibliotecas de Python (por ejemplo, SQLAlchemy y Alembic para el manejo de migraciones y modelos), así como para facilitar la manipulación y análisis de datos en el caso del servicio de métricas.</li>
+<li>Servicios desarrollados en <strong>Node.js (Prisma)</strong>: se utilizaron para microservicios que se benefician de un ecosistema JavaScript amplio (por ejemplo, integración con el Gateway y el manejo de flujos de datos en tiempo real), además de la conveniencia de usar Prisma en servicios que requieren un acceso sencillo a SQL con generación de tipados.</li>
+</ul>
+<p>Estas elecciones buscan balancear la productividad del equipo con la robustez del stack y la interoperabilidad entre servicios.</p>
 <h2 id="almacenamiento-de-archivos-multimedia">Almacenamiento de Archivos Multimedia<a class="headerlink" href="#almacenamiento-de-archivos-multimedia" title="Permanent link">&para;</a></h2>
 <p>Para el manejo de imágenes y audios, decidimos utilizar <strong>LocalStack</strong> durante el desarrollo local y <strong>Amazon S3</strong> en producción:</p>
 <ul>
