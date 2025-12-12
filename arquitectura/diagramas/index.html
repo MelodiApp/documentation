@@ -455,10 +455,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#diagrama-general-componentes" class="md-nav__link">
+  <a href="#infraestructura-general" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Diagrama general (Componentes)
+        Infraestructura General
       
     </span>
   </a>
@@ -466,21 +466,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#diagrama-de-secuencia-solicitud-de-reproduccion-detalle-de-artista" class="md-nav__link">
+  <a href="#comunicacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Diagrama de secuencia (Solicitud de reproducción / detalle de artista)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagrama-de-despliegue-alto-nivel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Diagrama de despliegue (alto nivel)
+        Comunicación
       
     </span>
   </a>
@@ -703,10 +692,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#diagrama-general-componentes" class="md-nav__link">
+  <a href="#infraestructura-general" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Diagrama general (Componentes)
+        Infraestructura General
       
     </span>
   </a>
@@ -714,21 +703,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#diagrama-de-secuencia-solicitud-de-reproduccion-detalle-de-artista" class="md-nav__link">
+  <a href="#comunicacion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Diagrama de secuencia (Solicitud de reproducción / detalle de artista)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagrama-de-despliegue-alto-nivel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Diagrama de despliegue (alto nivel)
+        Comunicación
       
     </span>
   </a>
@@ -753,74 +731,13 @@
 
 
 <h1 id="diagramas-de-arquitectura">Diagramas de Arquitectura<a class="headerlink" href="#diagramas-de-arquitectura" title="Permanent link">&para;</a></h1>
-<p>En esta sección se muestran diagramas de alto nivel que ilustran cómo interactúan los componentes del sistema.</p>
-<h2 id="diagrama-general-componentes">Diagrama general (Componentes)<a class="headerlink" href="#diagrama-general-componentes" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>flowchart LR
-  subgraph Frontends
-    Mobile[Frontend Móvil (Expo)]
-    Backoffice[Backoffice web (Vite/React)]
-  end
-
-  subgraph Infra
-    Gateway[Gateway (Node.js)]
-    S3[(Almacenamiento S3 / LocalStack)]
-  end
-
-  subgraph Services
-    Users[Users Service]
-    Artists[Artists Service]
-    Libraries[Libraries Service]
-    Metrics[Metrics Service]
-    Notifications[Notifications Service]
-  end
-
-  Mobile --&gt;|HTTP/REST| Gateway
-  Backoffice --&gt;|HTTP/REST| Gateway
-  Gateway --&gt;|Enrutamiento| Users
-  Gateway --&gt;|Enrutamiento| Artists
-  Gateway --&gt;|Enrutamiento| Libraries
-  Gateway --&gt;|Enrutamiento| Metrics
-  Gateway --&gt;|Enrutamiento| Notifications
-  Artists -- S3 --&gt; S3
-  Libraries -- S3 --&gt; S3
-</code></pre></div>
-<h2 id="diagrama-de-secuencia-solicitud-de-reproduccion-detalle-de-artista">Diagrama de secuencia (Solicitud de reproducción / detalle de artista)<a class="headerlink" href="#diagrama-de-secuencia-solicitud-de-reproduccion-detalle-de-artista" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>sequenceDiagram
-  participant Mobile
-  participant Gateway
-  participant Artists
-  participant S3
-
-  Mobile-&gt;&gt;Gateway: GET /artists/{id}
-  Gateway-&gt;&gt;Artists: GET /artists/{id}
-  Artists-&gt;&gt;S3: GET /assets/{image}
-  S3--&gt;&gt;Artists: image
-  Artists--&gt;&gt;Gateway: artist details + asset URLs
-  Gateway--&gt;&gt;Mobile: artist details + asset URLs
-</code></pre></div>
-<h2 id="diagrama-de-despliegue-alto-nivel">Diagrama de despliegue (alto nivel)<a class="headerlink" href="#diagrama-de-despliegue-alto-nivel" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>flowchart TD
-  subgraph Heroku
-    Gateway
-    Users
-    Artists
-    Libraries
-    Metrics
-    Notifications
-  end
-
-  subgraph Vercel
-    Backoffice
-  end
-
-  subgraph Expo
-    Mobile
-  end
-
-  Mobile --&gt; Gateway --&gt; Services
-  Backoffice --&gt; Gateway --&gt; Services
-</code></pre></div>
-<p>Estos diagramas son conceptuales y facilitan la comprensión de la arquitectura. Para detalles concretos de despliegue (tamaños de instancia, variables de entorno y secretos), consultar los README de cada microservicio y la configuración de Heroku/Vercel.</p>
+<h2 id="infraestructura-general">Infraestructura General<a class="headerlink" href="#infraestructura-general" title="Permanent link">&para;</a></h2>
+<p>Aquí podés agregar el diagrama de infraestructura en formato PNG.</p>
+<p><img alt="Infraestructura General" src="../assets/melodia-infra-general.png" /></p>
+<h2 id="comunicacion">Comunicación<a class="headerlink" href="#comunicacion" title="Permanent link">&para;</a></h2>
+<p>Aquí podés agregar el diagrama de comunicación entre componentes en formato PNG.</p>
+<p><img alt="Comunicación" src="../assets/melodia-comunicacion.png" /></p>
+<p>Colocá las imágenes en <code>docs/arquitectura/assets/</code> o <code>docs/assets/</code> y actualizá las rutas si es necesario.</p>
 
 
 
