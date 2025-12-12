@@ -16,5 +16,5 @@ Bienvenidos a la documentación del proyecto. Acá vas a encontrar:
 
 - [General](general/general.md)
 - [Arquitectura](arquitectura/arquitectura.md)
-- [APIs](apis.md)
-- [Contribuir](contribuir.md)
+- [APIs] - (documentación de APIs removida)
+- [Contribuir] - (guía de contribución removida)
