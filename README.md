@@ -138,3 +138,70 @@ Scripts de ayuda (opcional)
 # sirve con mkdocs (crea .venv e instala deps si es necesario)
 ./scripts/serve-mkdocs.sh
 ```
+
+## Agregar imágenes a la documentación
+
+Si querés incluir imágenes (por ejemplo diagramas en PNG) en las páginas de la documentación, seguí estos pasos.
+
+1) Decidir dónde guardar la imagen
+- Opción A (recomendada para contenido específico de una sección): crear una carpeta `assets/` dentro del folder donde está el MD. Por ejemplo, para `docs/arquitectura/diagramas.md` guardá las imágenes en `docs/arquitectura/assets/`.
+- Opción B (centralizada): colocar imágenes reutilizables en `docs/assets/images/`.
+
+2) Añadir la imagen al proyecto
+```bash
+# si la imagen está en Descargas, por ejemplo
+cp ~/Descargas/infra.png docs/arquitectura/assets/infraestructura-general.png
+```
+
+3) Referenciar la imagen desde el Markdown
+- Si la imagen está en la misma carpeta de `diagramas.md` en `docs/arquitectura/assets/`, usá:
+```markdown
+![Infraestructura General](assets/infraestructura-general.png)
+```
+- Si la imagen está en `docs/assets/images/` (carpeta central), usá una ruta absoluta a la raíz del doc:
+```markdown
+![Infraestructura General](/assets/images/infraestructura-general.png)
+```
+
+4) Ajustar tamaño o leyenda
+- Markdown no tiene atributos de ancho por defecto; para controlar el tamaño podés usar HTML:
+```html
+<img src="assets/infraestructura-general.png" alt="Infraestructura General" width="700" />
+```
+- Para añadir pie de figura y leyenda:
+```html
+<figure>
+  <img src="assets/infraestructura-general.png" alt="Infraestructura General" width="700" />
+  <figcaption>Figura 1 — Infraestructura general</figcaption>
+</figure>
+```
+
+5) Optimizar la imagen (opcional)
+```bash
+# optimizar PNG con optipng (u otro optimizador)
+optipng -o7 docs/arquitectura/assets/infraestructura-general.png
+# o pngquant para reducir tamaño
+pngquant --quality=60-80 docs/arquitectura/assets/infraestructura-general.png --output docs/arquitectura/assets/infraestructura-general.png
+```
+
+6) Agregar, commitear y pushear
+```bash
+git add docs/arquitectura/assets/infraestructura-general.png docs/arquitectura/diagramas.md
+git commit -m "docs(arquitectura): add diagrams images for infraestructura and comunicacion"
+git push origin main
+```
+
+7) Verificar en local y en CI
+- Probar localmente:
+```bash
+./scripts/serve-mkdocs-no-venv.sh
+# o si preferís otro puerto
+mkdocs serve -a 127.0.0.1:4000
+```
+- Verificar en GitHub Pages una vez que la pipeline haya terminado y los archivos estén en el branch configurado.
+
+Consejos
+- Si la imagen es un diagrama vectorial, preferí SVG en lugar de PNG para mejor escalabilidad.
+- Evitá espacios y caracteres especiales en los nombres de archivo; usá guiones en minúsculas (por ejemplo `infraestructura-general.png`).
+- Si necesitas mostrar varias imágenes lado a lado o con estilo, usá HTML o tablas Markdown según la complejidad.
+
