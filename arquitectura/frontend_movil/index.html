@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -31,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -732,7 +732,7 @@
 
 <h1 id="frontend-movil">Frontend Móvil<a class="headerlink" href="#frontend-movil" title="Permanent link">&para;</a></h1>
 <p>La interfaz destinada a los usuarios finales fue desarrollada utilizando <strong>React Native (Expo)</strong>.<br />
-Se ejecuta mediante <strong>Expo Go</strong>, permitiendo una experiencia móvil multiplataforma con una base de código unificada.</p>
+Durante la fase de desarrollo y pruebas, la aplicación se ejecuta mediante <strong>Expo Go</strong>, permitiendo una experiencia móvil multiplataforma con una base de código unificada.</p>
 <h3 id="funcionamiento">Funcionamiento<a class="headerlink" href="#funcionamiento" title="Permanent link">&para;</a></h3>
 <ul>
 <li>El frontend realiza solicitudes al <strong>Gateway</strong>, que enruta cada petición al microservicio correspondiente según la funcionalidad requerida.</li>
@@ -740,7 +740,13 @@ Se ejecuta mediante <strong>Expo Go</strong>, permitiendo una experiencia móvil
 </ul>
 <h3 id="tecnologias">Tecnologías<a class="headerlink" href="#tecnologias" title="Permanent link">&para;</a></h3>
 <ul>
-<li>React Native (Expo)</li>
+<li><strong>React Native (Expo)</strong> con TypeScript</li>
+<li><strong>Expo Router</strong> para navegación</li>
+<li><strong>React Query (@tanstack/react-query)</strong> para gestión de estado del servidor</li>
+<li><strong>Context API</strong> para estado global (autenticación, reproductor, playlists)</li>
+<li><strong>Firebase Cloud Messaging</strong> para notificaciones push</li>
+<li><strong>react-native-track-player</strong> para reproducción de audio en segundo plano</li>
+<li><strong>Expo AV</strong> para gestión multimedia</li>
 <li>Comunicación con backend a través del Gateway</li>
 </ul>
 
@@ -792,10 +798,10 @@ Se ejecuta mediante <strong>Expo Go</strong>, permitiendo una experiencia móvil
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "content.code.copy", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
